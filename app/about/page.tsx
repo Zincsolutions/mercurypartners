@@ -119,6 +119,18 @@ export default function About() {
               Guided by Experience and <em>Accountability</em>
             </h2>
             <p className="lede muted">
+              Brad de Koning brings over 25 years of principal investing and executive leadership
+              experience dedicated to the lower middle market. As Founding Partner of Mercury
+              Partners, he leads the firm&apos;s investment strategy and works closely with
+              management teams to support long-term growth, continuity, and value creation.
+            </p>
+            <p className="text-regular muted" style={{ marginBottom: "1rem" }}>
+              Having served as the CEO of two companies and as a private equity managing director,
+              Mr. de Koning brings a combination of deal-making expertise and hands-on operating
+              experience. He has been through the founder transition process from both sides of the
+              table — and understands the nuances that make each partnership unique.
+            </p>
+            <p className="text-regular muted" style={{ marginBottom: "1.5rem" }}>
               Mercury Partners is built on the belief that the best outcomes for founders,
               employees, and investors are achieved through aligned, long-term ownership — not
               financial engineering or exit timelines.
