@@ -156,16 +156,30 @@ h1 em, h2 em, h3 em, .serif-accent {
 .nav__links { display: flex; align-items: center; gap: 3.5rem; justify-self: center; }
 .nav__toggle { justify-self: end; }
 .nav__link {
+  position: relative;
   color: var(--navy);
   text-decoration: none;
   font-size: 1rem;
   font-weight: 500;
   padding: 0.5rem 0;
-  border-bottom: 2px solid transparent;
-  transition: border-color 0.2s, color 0.2s;
+  transition: color 0.2s;
 }
-.nav__link:hover { border-bottom-color: var(--navy-tint); }
-.nav__link--active { color: var(--orange); border-bottom-color: var(--orange); }
+.nav__link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background: var(--orange);
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.25s ease;
+}
+.nav__link:hover { color: var(--orange); }
+.nav__link:hover::after { transform: scaleX(1); }
+.nav__link--active { color: var(--orange); }
+.nav__link--active::after { transform: scaleX(1); }
 .nav__toggle { display: none; background: none; border: none; cursor: pointer; padding: 0.75rem; }
 .nav__toggle span { display: block; width: 24px; height: 2px; background: var(--navy); margin: 5px 0; transition: transform 0.2s, opacity 0.2s; }
 @media (max-width: 860px) {
