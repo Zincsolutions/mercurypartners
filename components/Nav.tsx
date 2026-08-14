@@ -9,6 +9,7 @@ const links = [
   { href: "/about", label: "About" },
   { href: "/founder-legacy", label: "Founder Legacy" },
   { href: "/investments", label: "Investments" },
+  { href: "/contact", label: "Contact" },
 ];
 
 export default function Nav() {
@@ -19,7 +20,7 @@ export default function Nav() {
     <header className={`nav pad-global${open ? " nav--open" : ""}`}>
       <div className="container nav__inner">
         <Link href="/" className="nav__logo" aria-label="Mercury Partners home" onClick={() => setOpen(false)}>
-          <Image src="/images/logo-blue.png" alt="Mercury Partners" width={219} height={40} priority />
+          <Image src="/images/logo-blue.png" alt="Mercury Partners" width={241} height={44} priority />
         </Link>
         <nav className={`nav__links${open ? " nav__links--open" : ""}`} aria-label="Main">
           {links.map((l) => (
@@ -32,9 +33,6 @@ export default function Nav() {
               {l.label}
             </Link>
           ))}
-          <Link href="/contact" className="btn btn--small" onClick={() => setOpen(false)}>
-            Contact
-          </Link>
         </nav>
         <button
           className="nav__toggle"

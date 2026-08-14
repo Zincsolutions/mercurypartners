@@ -86,13 +86,13 @@ export default function Home() {
               We invest in and grow <em>founder-owned businesses.</em>
             </h1>
             <p className="lede muted">
-              Mercury Partners is an investment company with over 25 years of principal investing
-              and CEO experience focused on acquiring and operating founder-owned businesses across
-              the lower middle market.
+              Mercury Partners is an investment company focused on acquiring and operating
+              founder-owned businesses. Over 25 years of principal investing and CEO experience
+              dedicated to the lower middle-market.
             </p>
             <div className="btn-group">
-              <Link href="/contact" className="btn">Start a Conversation</Link>
-              <Link href="/about" className="btn btn--secondary">About Us</Link>
+              <Link href="/contact" className="btn">START A CONVERSATION</Link>
+              <Link href="/about" className="btn btn--secondary">ABOUT US</Link>
             </div>
             <div className="hero-stats">
               <div><div className="hero-stat__num">25+</div><div className="hero-stat__label">Years of Experience</div></div>
@@ -102,10 +102,10 @@ export default function Home() {
           </div>
           <div className="hero__art" aria-hidden="true">
             <div className="hero__img-main">
-              <Image src="/images/mercury-meeting.jpg" alt="" fill sizes="(max-width: 860px) 90vw, 40vw" style={{ objectFit: "cover" }} priority />
+              <Image src="/images/architecture.jpg" alt="" fill sizes="(max-width: 860px) 90vw, 35vw" style={{ objectFit: "cover", objectPosition: "12% 35%" }} priority />
             </div>
             <div className="hero__img-small">
-              <Image src="/images/radiologist.jpg" alt="" fill sizes="20vw" style={{ objectFit: "cover" }} />
+              <Image src="/images/radiologist.jpg" alt="" fill sizes="22vw" style={{ objectFit: "cover" }} />
             </div>
           </div>
         </div>
