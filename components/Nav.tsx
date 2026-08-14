@@ -18,9 +18,9 @@ export default function Nav() {
 
   return (
     <header className={`nav pad-global${open ? " nav--open" : ""}`}>
-      <div className="container nav__inner">
+      <div className="nav__inner">
         <Link href="/" className="nav__logo" aria-label="Mercury Partners home" onClick={() => setOpen(false)}>
-          <Image src="/images/logo-blue.png" alt="Mercury Partners" width={241} height={44} priority />
+          <Image src="/images/logo-blue.png" alt="Mercury Partners" width={208} height={38} priority />
         </Link>
         <nav className={`nav__links${open ? " nav__links--open" : ""}`} aria-label="Main">
           {links.map((l) => (

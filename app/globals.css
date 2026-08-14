@@ -152,8 +152,8 @@ h1 em, h2 em, h3 em, .serif-accent {
   gap: 1.5rem;
 }
 .nav__logo { justify-self: start; }
-.nav__logo img { height: 2.75rem; width: auto; }
-.nav__links { display: flex; align-items: center; gap: 3.5rem; justify-self: center; }
+.nav__logo img { height: 2.375rem; width: auto; }
+.nav__links { display: flex; align-items: center; gap: 3.5rem; justify-self: center; position: relative; left: 1.75rem; }
 .nav__toggle { justify-self: end; }
 .nav__link {
   position: relative;
