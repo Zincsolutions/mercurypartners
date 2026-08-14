@@ -11,7 +11,7 @@ export default function Contact() {
   return (
     <>
       <section className="page-hero pad-global">
-        <div className="container page-hero__inner">
+        <div className="container"><div className="page-hero__inner">
           <span className="eyebrow">Get in Touch</span>
           <h1 className="h1">
             Let&apos;s <em>Talk</em>
@@ -19,7 +19,7 @@ export default function Contact() {
           <p className="lede muted">
             Start a confidential conversation about your business and long-term goals.
           </p>
-        </div>
+        </div></div>
       </section>
 
       <section className="section pad-global">

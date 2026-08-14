@@ -75,7 +75,7 @@ export default function FounderLegacy() {
   return (
     <>
       <section className="page-hero pad-global">
-        <div className="container page-hero__inner">
+        <div className="container"><div className="page-hero__inner">
           <span className="eyebrow">Why Mercury</span>
           <h1 className="h1">
             A Different Kind of <em>Investment Firm</em>
@@ -83,7 +83,7 @@ export default function FounderLegacy() {
           <p className="lede muted">
             We invest in businesses the way founders built them — for the long haul.
           </p>
-        </div>
+        </div></div>
       </section>
 
       <section className="section pad-global">

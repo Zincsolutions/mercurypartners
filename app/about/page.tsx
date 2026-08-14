@@ -78,7 +78,7 @@ export default function About() {
   return (
     <>
       <section className="page-hero pad-global">
-        <div className="container page-hero__inner">
+        <div className="container"><div className="page-hero__inner">
           <span className="eyebrow">About Mercury Partners</span>
           <h1 className="h1">
             Investing in <em>Partnership</em>
@@ -87,7 +87,7 @@ export default function About() {
             Over 25 years of principal investing and CEO experience dedicated to the lower middle
             market.
           </p>
-        </div>
+        </div></div>
       </section>
 
       <section className="section-sm pad-global">

@@ -75,7 +75,7 @@ export default function Investments() {
   return (
     <>
       <section className="page-hero pad-global">
-        <div className="container page-hero__inner">
+        <div className="container"><div className="page-hero__inner">
           <span className="eyebrow">Track Record</span>
           <h1 className="h1">
             Representative <em>Transactions</em>
@@ -84,7 +84,7 @@ export default function Investments() {
             Proven experience partnering with lower middle-market leaders across healthcare and
             business services.
           </p>
-        </div>
+        </div></div>
       </section>
 
       <section className="section-sm pad-global">
