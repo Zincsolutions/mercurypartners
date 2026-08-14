@@ -1,8 +1,16 @@
 export type Stat = { num: string; label: string };
 
-export default function StatBand({ stats, footnote }: { stats: Stat[]; footnote?: string }) {
+export default function StatBand({
+  stats,
+  footnote,
+  bare = false,
+}: {
+  stats: Stat[];
+  footnote?: string;
+  bare?: boolean;
+}) {
   return (
-    <div className="stat-band">
+    <div className={`stat-band${bare ? " stat-band--bare" : ""}`}>
       <div className="stat-band__grid">
         {stats.map((s) => (
           <div key={s.label} className="stat-card">

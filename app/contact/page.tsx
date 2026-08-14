@@ -22,7 +22,7 @@ export default function Contact() {
         </div></div>
       </section>
 
-      <section className="section pad-global">
+      <section className="section pad-global scheme-cool">
         <div className="container contact-grid">
           <div className="contact-info">
             <div>

@@ -86,7 +86,7 @@ export default function FounderLegacy() {
         </div></div>
       </section>
 
-      <section className="section pad-global">
+      <section className="section pad-global scheme-cool">
         <div className="container split">
           <div>
             <span className="eyebrow">Legacy First</span>
@@ -121,7 +121,7 @@ export default function FounderLegacy() {
         </div>
       </section>
 
-      <section className="section pad-global scheme-cool">
+      <section className="section pad-global">
         <div className="container">
           <SectionHeader
             eyebrow="Why Founders Choose Mercury"

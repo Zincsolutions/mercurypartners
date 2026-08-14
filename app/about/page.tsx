@@ -90,7 +90,7 @@ export default function About() {
         </div></div>
       </section>
 
-      <section className="section-sm pad-global">
+      <section className="section-sm pad-global scheme-cool">
         <div className="container">
           <div className="card-grid card-grid--3">
             {pillars.map((p) => (

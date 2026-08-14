@@ -87,9 +87,10 @@ export default function Investments() {
         </div></div>
       </section>
 
-      <section className="section-sm pad-global">
+      <section className="section-sm pad-global scheme-cool">
         <div className="container">
           <StatBand
+            bare
             stats={[
               { num: "22", label: "Investments" },
               { num: "25+", label: "Years Investing" },
