@@ -74,7 +74,7 @@ const sectors = [
 export default function Investments() {
   return (
     <>
-      <section className="page-hero pad-global">
+      <section className="page-hero page-hero--dark pad-global">
         <div className="container"><div className="page-hero__inner">
           <span className="eyebrow">Track Record</span>
           <h1 className="h1">

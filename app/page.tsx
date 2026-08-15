@@ -78,7 +78,7 @@ const faqs = [
 export default function Home() {
   return (
     <>
-      <section className="hero pad-global">
+      <section className="hero hero--dark pad-global">
         <div className="container hero__grid">
           <div>
             <span className="eyebrow">Lower Middle Market Partners</span>

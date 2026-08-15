@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function Contact() {
   return (
     <>
-      <section className="page-hero pad-global">
+      <section className="page-hero page-hero--dark pad-global">
         <div className="container"><div className="page-hero__inner">
           <span className="eyebrow">Get in Touch</span>
           <h1 className="h1">

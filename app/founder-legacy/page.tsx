@@ -74,7 +74,7 @@ const faqs = [
 export default function FounderLegacy() {
   return (
     <>
-      <section className="page-hero pad-global">
+      <section className="page-hero page-hero--dark pad-global">
         <div className="container"><div className="page-hero__inner">
           <span className="eyebrow">Why Mercury</span>
           <h1 className="h1">

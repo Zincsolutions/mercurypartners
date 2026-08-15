@@ -1,7 +1,10 @@
 {
   "permissions": {
     "allow": [
-      "Bash(curl -sL \"https://mercury-v-45a808.design.webflow.com/\" -o \"/private/tmp/claude-501/-Users-jimini-Projects-mercury-partners/820b468c-81a9-4f9f-9c9e-bf3c22625a51/scratchpad/home.html\")"
+      "Bash(curl -sL \"https://mercury-v-45a808.design.webflow.com/\" -o \"/private/tmp/claude-501/-Users-jimini-Projects-mercury-partners/820b468c-81a9-4f9f-9c9e-bf3c22625a51/scratchpad/home.html\")",
+      "Bash(git commit -m 'Mercury Partners site: client IA with Webflow look and feel *)",
+      "Bash(git remote *)",
+      "Bash(git push *)"
     ]
   }
 }

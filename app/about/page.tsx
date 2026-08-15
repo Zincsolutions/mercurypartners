@@ -77,7 +77,7 @@ const faqs = [
 export default function About() {
   return (
     <>
-      <section className="page-hero pad-global">
+      <section className="page-hero page-hero--dark pad-global">
         <div className="container"><div className="page-hero__inner">
           <span className="eyebrow">About Mercury Partners</span>
           <h1 className="h1">

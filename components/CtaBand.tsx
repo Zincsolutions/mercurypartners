@@ -8,7 +8,7 @@ export default function CtaBand({
   label?: string;
 }) {
   return (
-    <section className="cta-band pad-global section">
+    <section className="cta-band pad-global section on-navy on-navy--deep">
       <div className="container cta-band__inner">
         <div>
           <h2 className="h3">
@@ -16,7 +16,7 @@ export default function CtaBand({
           </h2>
           <p className="lede muted">{lede}</p>
         </div>
-        <Link href="/contact" className="btn">
+        <Link href="/contact" className="btn btn--on-navy">
           {label}
         </Link>
       </div>
