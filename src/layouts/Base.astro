@@ -1,0 +1,39 @@
+---
+import "@fontsource-variable/inter";
+import "../styles/global.css";
+import Nav from "../components/Nav.astro";
+import Footer from "../components/Footer.astro";
+
+interface Props {
+  /** Page title; suffixed with "| Mercury Partners" (mirrors the Next.js title template). */
+  title?: string;
+  description: string;
+}
+
+const DEFAULT_TITLE = "Mercury Partners | Permanent Capital for Founder-Owned Businesses";
+const METADATA_BASE = "https://www.mercfund.com";
+
+const { title, description } = Astro.props;
+const fullTitle = title ? `${title} | Mercury Partners` : DEFAULT_TITLE;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:site_name" content="Mercury Partners" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content={`${METADATA_BASE}/images/mercury-meeting.jpg`} />
+  </head>
+  <body>
+    <Nav />
+    <main><slot /></main>
+    <Footer />
+  </body>
+</html>

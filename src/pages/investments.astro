@@ -1,0 +1,156 @@
+---
+import Base from "../layouts/Base.astro";
+import SectionHeader from "../components/SectionHeader.astro";
+import StatBand from "../components/StatBand.astro";
+import CtaBand from "../components/CtaBand.astro";
+
+const companies = [
+  {
+    name: "DirectMed",
+    img: "/images/directmed.jpg",
+    desc: "Leading provider of imaging parts for MRI and CT systems. Scaled through organic growth and strategic acquisitions into a lower middle-market leader.",
+  },
+  {
+    name: "LBN Medical",
+    img: "/images/lbn-medical.jpg",
+    desc: "Diagnostic imaging systems and parts provider serving hospitals and independent imaging centers across the U.S. and international markets.",
+  },
+  {
+    name: "Medical Systems Tech",
+    img: "/images/medical-systems-tech.jpg",
+    desc: "Component-level repair and testing for imaging parts — providing highly technical repair capabilities that complement the broader portfolio.",
+  },
+  {
+    name: "Richardson Healthcare",
+    img: "/images/richardson.jpg",
+    desc: "Toshiba imaging parts and training services combined with Siemens CT X-ray tube distribution — a complementary strategic add-on.",
+  },
+  {
+    name: "ScanMed",
+    img: "/images/scanmed.jpg",
+    desc: "Specialized MRI coil design, manufacture, and repair services. A niche technical business serving hospital systems and imaging centers nationwide.",
+  },
+  {
+    name: "Technical Prospects",
+    img: "/images/technical-prospects.jpg",
+    desc: "Comprehensive parts, training, and service provider for Siemens imaging systems with deep OEM relationships and technical expertise.",
+  },
+  {
+    name: "Titanium Medical Imaging",
+    img: "/images/titanium.jpg",
+    desc: "Specialized parts and service provider for Toshiba imaging systems, serving independent service organizations and hospitals nationally.",
+  },
+];
+
+const sectors = [
+  {
+    title: "Healthcare Services",
+    items: [
+      "Healthcare diagnostics and monitoring",
+      "Outsourced healthcare services",
+      "Tech-enabled healthcare solutions",
+      "Medical products and distribution",
+      "Repair and maintenance services",
+    ],
+  },
+  {
+    title: "Business Services",
+    items: [
+      "Technology-enabled services",
+      "Information and data services",
+      "Facilities management",
+      "Testing and inspection",
+      "Logistics and distribution",
+    ],
+  },
+];
+---
+
+<Base
+  title="Investments"
+  description="Representative transactions across healthcare and business services — a track record built on founder-first partnership and long-term operational growth."
+>
+  <section class="page-hero pad-global">
+    <div class="container"><div class="page-hero__inner">
+      <span class="eyebrow">Track Record</span>
+      <h1 class="h1">
+        Representative <em>Transactions</em>
+      </h1>
+      <p class="lede muted">
+        Proven experience partnering with lower middle-market leaders across healthcare and
+        business services.
+      </p>
+    </div></div>
+  </section>
+
+  <section class="section-sm pad-global scheme-cool">
+    <div class="container">
+      <StatBand
+        bare
+        stats={[
+          { num: "22", label: "Investments" },
+          { num: "25+", label: "Years Investing" },
+          { num: "70%+", label: "Healthcare & Business Services" },
+          { num: "LMM", label: "Focused Strategy" },
+        ]}
+      />
+    </div>
+  </section>
+
+  <section class="section pad-global">
+    <div class="container">
+      <SectionHeader
+        eyebrow="Portfolio"
+        lede="Each investment reflects our commitment to founder-first partnership and long-term operational growth."
+      >
+        A Track Record Built Across <em>Diverse Businesses</em>
+      </SectionHeader>
+      <div class="portfolio-grid">
+        {
+          companies.map((c) => (
+            <article class="pf-card">
+              <div class="pf-card__img">
+                <img src={c.img} alt={c.name} width="640" height="400" loading="lazy" />
+              </div>
+              <div class="pf-card__body">
+                <h3 class="pf-card__title">{c.name}</h3>
+                <p class="pf-card__desc">{c.desc}</p>
+                <div class="pf-card__tags">
+                  <span class="tag">Healthcare Services</span>
+                  <span class="tag">Buyout</span>
+                </div>
+              </div>
+            </article>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="section pad-global scheme-cool">
+    <div class="container">
+      <SectionHeader eyebrow="Industry Focus">
+        Sectors Where We <em>Add Value</em>
+      </SectionHeader>
+      <div class="card-grid card-grid--2">
+        {
+          sectors.map((s) => (
+            <div class="card">
+              <h3 class="card__title">{s.title}</h3>
+              <ul class="plainlist">
+                {s.items.map((i) => (
+                  <li>{i}</li>
+                ))}
+              </ul>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <CtaBand
+    lede="Start a conversation about your business and long-term goals."
+    label="Start a Conversation"
+  />
+</Base>

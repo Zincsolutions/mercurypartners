@@ -1,0 +1,25 @@
+---
+export type Stat = { num: string; label: string };
+
+interface Props {
+  stats: Stat[];
+  footnote?: string;
+  bare?: boolean;
+}
+
+const { stats, footnote, bare = false } = Astro.props;
+---
+
+<div class={`stat-band${bare ? " stat-band--bare" : ""}`}>
+  <div class="stat-band__grid">
+    {
+      stats.map((s) => (
+        <div class="stat-card">
+          <div class="stat-card__label">{s.label}</div>
+          <div class="stat-card__num">{s.num}</div>
+        </div>
+      ))
+    }
+  </div>
+  {footnote && <div class="stat-band__foot">{footnote}</div>}
+</div>

@@ -1,0 +1,23 @@
+---
+interface Props {
+  lede?: string;
+  label?: string;
+}
+
+const {
+  lede = "We're here to discuss how Mercury can support your business transition.",
+  label = "Let's Talk",
+} = Astro.props;
+---
+
+<section class="cta-band pad-global section">
+  <div class="container cta-band__inner">
+    <div>
+      <h2 class="h3">
+        Ready to explore a <em>partnership?</em>
+      </h2>
+      <p class="lede muted">{lede}</p>
+    </div>
+    <a href="/contact" class="btn">{label}</a>
+  </div>
+</section>

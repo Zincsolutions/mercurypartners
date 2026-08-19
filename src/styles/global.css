@@ -2,7 +2,38 @@
    Mercury Partners — design tokens
    Extracted from the Webflow build + style guide v1.1
    ========================================================= */
+
+/* ---------- self-hosted fonts (replaces next/font) ----------
+   Inter (body) is loaded via @fontsource-variable/inter,
+   imported in src/layouts/Base.astro; family "Inter Variable". */
+@font-face {
+  font-family: "Causten";
+  src: url("/fonts/Causten-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Freight Big Pro";
+  src: url("/fonts/FreightBigPro-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Freight Big Pro";
+  src: url("/fonts/FreightBigPro-LightItalic.woff2") format("woff2");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
 :root {
+  /* font variables (were set by next/font on <html>) */
+  --font-heading: "Causten";
+  --font-serif: "Freight Big Pro";
+  --font-body: "Inter Variable";
+
   /* color — honest names (see style guide "Build Notes") */
   --navy: #00224e;
   --navy-dark: #001b3e;

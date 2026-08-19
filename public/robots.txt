@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mercurypartners.netlify.app/sitemap-index.xml

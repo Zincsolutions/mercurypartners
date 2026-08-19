@@ -1,0 +1,185 @@
+---
+import Base from "../layouts/Base.astro";
+import SectionHeader from "../components/SectionHeader.astro";
+import Faq from "../components/Faq.astro";
+import CtaBand from "../components/CtaBand.astro";
+
+const pillars = [
+  {
+    title: "No Forced Sale Timelines",
+    body: "Permanent capital means decisions are driven by long-term value creation, never by a fund's exit requirements.",
+  },
+  {
+    title: "No Institutional Fund Pressure",
+    body: "Mercury is privately funded, enabling full alignment with founder and management team interests above all.",
+  },
+  {
+    title: "No Short-Term Thinking",
+    body: "We invest in people, systems, and growth strategies built to last — not financial maneuvers optimized for a quick exit.",
+  },
+];
+
+const strategy = [
+  {
+    title: "The Right Business",
+    items: [
+      "Loyal, diverse customer base",
+      "Unique value proposition",
+      "Attractive end markets with predictable growth",
+      "Distinct differentiation vs. competitors",
+    ],
+  },
+  {
+    title: "Financial Criteria",
+    items: [
+      "Revenue: $10M – $50M",
+      "EBITDA: $1M – $4M",
+      "Transaction Size: $5M – $50M",
+      "Geography: United States only",
+    ],
+  },
+  {
+    title: "Transaction Type",
+    items: [
+      "Majority or control ownership strongly preferred",
+      "Acquisitions, MBOs & recapitalizations",
+      "Select operational turnarounds",
+      "Financial restructurings",
+    ],
+  },
+  {
+    title: "Industry Focus",
+    items: ["Healthcare Services", "Business Services"],
+  },
+];
+
+const faqs = [
+  {
+    q: "How long has Mercury Partners been in business?",
+    a: "Mercury Partners has over 25 years of principal investing and executive leadership experience dedicated to the lower middle market.",
+  },
+  {
+    q: "What experience does Mercury have in business services?",
+    a: "Mercury has invested in and supported companies across technology-enabled services, information services, facilities management, testing and inspection, logistics, and distribution.",
+  },
+  {
+    q: "What experience does Mercury have in healthcare services?",
+    a: "Mercury has experience across healthcare diagnostics, monitoring, outsourced services, tech-enabled solutions, medical products and distribution, and repair and maintenance services.",
+  },
+];
+---
+
+<Base
+  title="About"
+  description="Over 25 years of principal investing and CEO experience dedicated to the lower middle market. Mercury Partners is built on aligned, long-term ownership."
+>
+  <section class="page-hero pad-global">
+    <div class="container"><div class="page-hero__inner">
+      <span class="eyebrow">About Mercury Partners</span>
+      <h1 class="h1">
+        Investing in <em>Partnership</em>
+      </h1>
+      <p class="lede muted">
+        Over 25 years of principal investing and CEO experience dedicated to the lower middle
+        market.
+      </p>
+    </div></div>
+  </section>
+
+  <section class="section-sm pad-global scheme-cool">
+    <div class="container">
+      <div class="card-grid card-grid--3">
+        {
+          pillars.map((p) => (
+            <div class="card card--hover">
+              <h3 class="card__title">{p.title}</h3>
+              <p class="card__body">{p.body}</p>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="section pad-global">
+    <div class="container split">
+      <div class="split__img">
+        <img
+          src="/images/brad-profile.jpg"
+          alt="Brad de Koning, Founding Partner of Mercury Partners"
+          width="800"
+          height="680"
+        />
+      </div>
+      <div>
+        <span class="eyebrow">Leadership</span>
+        <h2 class="h2">
+          Guided by Experience and <em>Accountability</em>
+        </h2>
+        <p class="lede muted">
+          Brad de Koning brings over 25 years of principal investing and executive leadership
+          experience dedicated to the lower middle market. As Founding Partner of Mercury
+          Partners, he leads the firm's investment strategy and works closely with
+          management teams to support long-term growth, continuity, and value creation.
+        </p>
+        <p class="text-regular muted" style="margin-bottom: 1rem;">
+          Having served as the CEO of two companies and as a private equity managing director,
+          Mr. de Koning brings a combination of deal-making expertise and hands-on operating
+          experience. He has been through the founder transition process from both sides of the
+          table — and understands the nuances that make each partnership unique.
+        </p>
+        <p class="text-regular muted" style="margin-bottom: 1.5rem;">
+          Mercury Partners is built on the belief that the best outcomes for founders,
+          employees, and investors are achieved through aligned, long-term ownership — not
+          financial engineering or exit timelines.
+        </p>
+        <p class="text-regular" style="margin-bottom: 0.5rem;">
+          <strong>Brad de Koning</strong> · Founding Partner
+        </p>
+        <ul class="checklist">
+          <li>Over 25 years of principal investing and CEO experience</li>
+          <li>Former CEO and private equity managing director</li>
+          <li>Directly involved from investment through long-term partnership</li>
+          <li>Deep expertise across healthcare and business services</li>
+          <li>Track record across 22+ lower middle-market investments</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section pad-global scheme-cool">
+    <div class="container">
+      <SectionHeader
+        eyebrow="Investment Strategy"
+        lede="Mercury focuses on founder-owned, lower middle-market companies that align with our long-term, partnership-driven approach. We seek businesses with strong fundamentals, durable markets, and leadership teams ready to grow with a permanent capital partner."
+      >
+        Disciplined Strategy for <em>Long-Term Partners</em>
+      </SectionHeader>
+      <div class="card-grid card-grid--4">
+        {
+          strategy.map((s) => (
+            <div class="card">
+              <h3 class="card__title">{s.title}</h3>
+              <ul class="plainlist">
+                {s.items.map((i) => (
+                  <li>{i}</li>
+                ))}
+              </ul>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="section pad-global scheme-grey">
+    <div class="container faq-layout">
+      <SectionHeader eyebrow="About the Firm">
+        More <em>Questions</em>
+      </SectionHeader>
+      <Faq items={faqs} />
+    </div>
+  </section>
+
+  <CtaBand />
+</Base>
